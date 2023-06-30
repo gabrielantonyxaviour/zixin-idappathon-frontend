@@ -258,6 +258,7 @@
   width: 368px;
   height: 55px;
   font-size: var(--font-size-base);
+  cursor: pointer;
 }
 .teams,
 .text3 {
