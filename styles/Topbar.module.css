@@ -40,13 +40,13 @@
   position: absolute;
   top: 36px;
   left: 307px;
-  width: 113.5px;
+  width: 1113.5px;
   height: 38px;
 }
 .backgroundIcon {
   top: 0;
   left: 0;
-  width: 1096px;
+  /* width: 2096px; */
   height: 88.48px;
   object-fit: cover;
 }
@@ -128,12 +128,22 @@
   top: 37.3%;
   right: 2.81%;
   bottom: 35.57%;
-  left: 88.78%;
+  left: 40.78%;
+  cursor: pointer;
 }
 .connectedWallet,
 .x2f59dbbcb3b393d86dbd539105e22 {
   position: absolute;
-  top: 28px;
+  top: 35px;
+  left: 0;
+  line-height: 150%;
+  display: inline-block;
+  width: 391px;
+  height: 14px;
+}
+.balancestyle {
+  position: absolute;
+  top: 17px;
   left: 0;
   line-height: 150%;
   display: inline-block;
@@ -178,7 +188,7 @@
   height: 58.3px;
   text-align: left;
   font-size: var(--font-size-sm);
-  color: var(--gray-gray-400);
+  color: #FFF;
 }
 .profileElements {
   position: absolute;
@@ -193,7 +203,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 368px;
+  width: 768px;
   height: 140px;
   object-fit: cover;
 }
@@ -227,7 +237,7 @@
 .backgroundIcon2,
 .card {
   position: absolute;
-  width: 368px;
+  width: 768px;
 }
 .card {
   top: 213px;

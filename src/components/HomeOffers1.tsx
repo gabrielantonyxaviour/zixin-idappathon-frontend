@@ -5,7 +5,11 @@ import Profilecard from "./Profilecard";
 import React from "react";
 import Topbar from "./Topbar";
 import Image from "next/image";
+import { useNetwork } from "wagmi";
+import { useChainModal } from "@rainbow-me/rainbowkit";
 const HomeOffers1: FunctionComponent = () => {
+  const { openChainModal } = useChainModal();
+  const { chain} = useNetwork()
   return (
     <div className={styles.homeoffers1}>
       <div className={styles.homeoffers1Child} />
@@ -42,13 +46,13 @@ const HomeOffers1: FunctionComponent = () => {
           <div className={styles.niceToSee}>Nice to see you, Mark Johnson!</div>
         </div>
       </div>
-      <div className={styles.chainselect}>
+      <div className={styles.chainselect} onClick={openChainModal}>
         <img
           className={styles.backgroundIcon2}
           alt=""
           src="/background9@2x.png"
         />
-        <b className={styles.ethereum}>Ethereum</b>
+        <b className={styles.ethereum}>{chain!= undefined ? chain.name:'loading'}</b>
       </div>
       <div className={styles.tokenview}>
         <div className={styles.background}>
