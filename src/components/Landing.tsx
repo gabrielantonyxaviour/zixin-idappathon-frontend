@@ -1,11 +1,11 @@
 import { FunctionComponent, useCallback, useEffect } from "react";
 import React from "react";
 import styles from "../../styles/Landing.module.css";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { useConnectModal } from "@rainbow-me/rainbowkit";
 import { useAccount } from "wagmi";
 const Landing: FunctionComponent = () => {
   const { isConnected } = useAccount();
-
+  const { openConnectModal } = useConnectModal();
   useEffect(() => {
     if (isConnected) {
       window.location.href = "/dashboard";
@@ -24,19 +24,18 @@ const Landing: FunctionComponent = () => {
           </p>
         </b>
       </div>
-      <div className={styles.buttonbase}>
+      <div className={styles.buttonbase} onClick={openConnectModal}>
         <div className={styles.widthStructure}>
           <div className={styles.heightStructure}>
-            <ConnectButton />
-            {/* <div className={styles.buttonBody}>
+          <div className={styles.buttonBody}>
               <div className={styles.icon}>
                 <div className={styles.div}></div>
               </div>
-              <b className={styles.text1}>Try Now</b>
+              <b className={styles.text1}>Connect Wallet</b>
               <div className={styles.icon}>
                 <div className={styles.div}></div>
               </div>
-            </div> */}
+            </div>
           </div>
           <div className={styles.minwidth}>
             <div className={styles.content} />
