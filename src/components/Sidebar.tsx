@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../../styles/Sidebar.module.css";
 import { useCallback } from "react";
 const Sidebar = () => {
+  const [selected, setSelected] = useState(0);
   const onprofilelick = useCallback(() => {}, []);
   const onShijiclick = useCallback(() => {}, []);
   const onZixinsclick = useCallback(() => {}, []);
@@ -48,7 +49,14 @@ const Sidebar = () => {
         </div>
       </div>
       <div className={styles.menu}>
-        <div className={styles.signUp} onClick={onZixinsclick}>
+        <a
+          className={selected == 2 ? styles.profile : styles.signUp}
+          href="/badges"
+          style={{ color: "white" }}
+          onClick={() => {
+            setSelected(2);
+          }}
+        >
           <div className={styles.signUpChild} />
           <img
             className={styles.ioniconrrocketsharp}
@@ -56,8 +64,15 @@ const Sidebar = () => {
             src="/ioniconrrocketsharp.svg"
           />
           <div className={styles.badges}>Badges</div>
-        </div>
-        <div className={styles.signIn} onClick={onShijiclick}>
+        </a>
+        <a
+          className={selected == 1 ? styles.profile : styles.signIn}
+          href={"/offers"}
+          style={{ color: "white" }}
+          onClick={() => {
+            setSelected(1);
+          }}
+        >
           <div className={styles.signUpChild} />
           <img
             className={styles.ioniconrrocketsharp}
@@ -65,8 +80,15 @@ const Sidebar = () => {
             src="/ioniconddocumentdefault.svg"
           />
           <div className={styles.offers1}>Offers</div>
-        </div>
-        <div className={styles.profile} onClick={onprofilelick}>
+        </a>
+        <a
+          className={selected == 0 ? styles.profile : styles.signIn}
+          href="/dashboard"
+          style={{ color: "white" }}
+          onClick={() => {
+            setSelected(0);
+          }}
+        >
           <div className={styles.profileChild} />
           <div className={styles.profileItem} />
           <img
@@ -75,7 +97,7 @@ const Sidebar = () => {
             src="/ioniconppersondefault3.svg"
           />
           <div className={styles.profile1}>Profile</div>
-        </div>
+        </a>
       </div>
       <div className={styles.logo}>
         <div className={styles.routerHackathon}>Router Hackathon</div>

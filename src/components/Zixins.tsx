@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./zixins.module.css";
+import styles from "../../styles/zixins.module.css";
 interface ChildComponentProps {
   name: string;
   imgsrc: string;

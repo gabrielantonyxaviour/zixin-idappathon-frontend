@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import styles from "./Badges.module.css";
+import styles from "../styles/Badges.module.css";
 import Sidebar from "../src/components/Sidebar";
 import Zixins from "../src/components/Zixins";
 import React from "react";

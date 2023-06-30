@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./shiji.module.css";
+import styles from "../../styles/shiji.module.css";
 interface ChildComponentProps {
   name: string;
   imgsrc: string;

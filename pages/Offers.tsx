@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import styles from "./Offers.module.css";
+import styles from "../styles/Offers.module.css";
 import Sidebar from "../src/components/Sidebar";
 import React from "react";
 import Shiji from "../src/components/Shiji";
