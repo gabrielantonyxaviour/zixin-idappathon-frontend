@@ -1,25 +1,28 @@
-import React, { useEffect} from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../../styles/Sidebar.module.css";
 const Sidebar = (props: { value: number; }) => {
   
   useEffect(() => {
+    const profilediv = document.getElementById("profile")!;
+    const badgesdiv = document.getElementById("badges")!;
+    const offersdiv = document.getElementById("offers")!;
     if(props.value == 0 ){
-      document.getElementById("profile").style.display = "block"
-      document.getElementById("badges").style.display = "none"
-      document.getElementById("offers").style.display = "none"
+      profilediv.style.display = "block"
+      badgesdiv.style.display = "none"
+      offersdiv.style.display = "none"
     }
     else if(props.value ==1){
-      document.getElementById("badges").style.display = "block"
-      document.getElementById("profile").style.display = "none"
-      document.getElementById("offers").style.display = "none"
+      badgesdiv.style.display = "block"
+      profilediv.style.display = "none"
+      offersdiv.style.display = "none"
     }
     else if(props.value ==2){
-      document.getElementById("badges").style.display = "none"
-      document.getElementById("profile").style.display = "none"
-      document.getElementById("offers").style.display = "block"
+      badgesdiv.style.display = "none"
+      profilediv.style.display = "none"
+      offersdiv.style.display = "block"
     }
   }, [])
-  
+
 
   return (
     <div className={styles.sidebar}>

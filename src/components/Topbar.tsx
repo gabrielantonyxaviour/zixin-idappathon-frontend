@@ -1,17 +1,16 @@
 import styles from "../../styles/Topbar.module.css";
 import React, { useEffect } from "react";
-import { useAccount } from "wagmi";
-import { ConnectButton, useAccountModal } from "@rainbow-me/rainbowkit";
+import { useAccount} from "wagmi";
+import {useAccountModal } from "@rainbow-me/rainbowkit";
 
 import { useBalance } from 'wagmi'
 
 const Topbar = () => {
-  const { isDisconnected } = useAccount();
-  const { address } = useAccount();
-  const { openAccountModal } = useAccountModal();
+  const { address,isDisconnected } = useAccount();
+  const { openAccountModal } = useAccountModal();  
   useEffect(() => {
     if (isDisconnected) {
-      // close();
+      window.location.href = "/"
     }
   }, [isDisconnected]);
   const { data} = useBalance({
@@ -19,13 +18,10 @@ const Topbar = () => {
   })
   return (
     <div className={styles.profileElements}>
-      {/* <img className={styles.backgroundIcon} alt="" src="/topbarback.png" /> */}
       <div className={styles.projects} onClick={openAccountModal}>
-        {/* <ConnectButton /> */}
         <div className={styles.buttonBody}>
                   <img src="/settings.png" />
-                  {/* <b className={styles.text1}>Sign Out</b> */}
-          </div>
+        </div>
       </div>
       <div className={styles.avatar}>
         <div className={styles.name}>

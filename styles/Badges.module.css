@@ -48,7 +48,7 @@
 }
 .availableZxns,
 .breadcrumb1 {
-  position: relative;
+  position: absolute;
   line-height: 140%;
 }
 .breadcrumb1 {
