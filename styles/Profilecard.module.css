@@ -1,0 +1,126 @@
+.text5 {
+  position: absolute;
+  top: 209px;
+  left: 4px;
+  width: 286.72px;
+  height: 116.67px;
+}
+.buttonbase {
+  position: absolute;
+  height: 27.71%;
+  width: 35.6%;
+  top: 72.29%;
+  right: 64.27%;
+  bottom: 0;
+  left: 0.13%;
+  border-radius: var(--br-xs);
+  border: 1px solid var(--blackampwhite-white);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 0 7.999999523162842px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-black);
+  font-family: var(--font-font-awesome-5-free);
+}
+.widthStructure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.widthStructure {
+  overflow: hidden;
+  flex-direction: column;
+}
+.heightStructure {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.heightStructure {
+  height: 24px;
+  justify-content: flex-start;
+}
+.buttonBody3 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.icon4 {
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  padding: 0 0.4999999701976776px;
+  justify-content: flex-start;
+}
+.icon4,
+.text6 {
+  align-items: center;
+}
+.div {
+  position: relative;
+  line-height: 12px;
+}
+.text6 {
+  position: relative;
+  font-size: var(--font-size-3xs);
+  line-height: 150%;
+  display: flex;
+  font-family: var(--font-plus-jakarta-sans);
+  color: var(--blackampwhite-white);
+  justify-content: center;
+  width: 47.5px;
+  height: 15px;
+  flex-shrink: 0;
+}
+.minwidth {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: 0 var(--padding-xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.content3 {
+  position: relative;
+  background-color: var(--blackampwhite-white);
+  width: 0.01px;
+  height: 0.01px;
+}
+.authenticateWithLinkedinContainer,
+.linkedinAuth {
+  position: absolute;
+  top: 29.85px;
+  left: 0.37px;
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  display: inline-block;
+  width: 286.35px;
+  height: 38.8px;
+}
+.authenticateWithLinkedin {
+  margin: 0;
+}
+
+.linkedinAuth {
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-lg);
+  line-height: 140%;
+  width: 125px;
+  height: 23px;
+}
+.buttonbase1,
+.card3,
+.imageIcon1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 341.77px;
+  height: 176.89px;
+}

@@ -1,0 +1,337 @@
+.background,
+.backgroundChild,
+.sidebarChild {
+  position: absolute;
+  width: 1454px;
+  height: 1038px;
+}
+.backgroundChild {
+  top: 0;
+  left: 0;
+  background: linear-gradient(159.02deg, #471a52, #090d2e 58.69%, #9b2a76);
+}
+.background,
+.sidebarChild {
+  top: -7px;
+  left: -14px;
+}
+.sidebarChild {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xl);
+  background: linear-gradient(109.27deg, #21123c, #42194f);
+  backdrop-filter: blur(120px);
+  width: 264px;
+  height: 995px;
+}
+.backgroundIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 148.59px;
+  object-fit: cover;
+}
+.div {
+  position: relative;
+  line-height: 12px;
+}
+.icon {
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  padding: 0 var(--padding-12xs-5);
+  align-items: center;
+  justify-content: flex-start;
+}
+.text {
+  position: relative;
+  font-size: var(--font-size-3xs);
+  line-height: 100%;
+  font-family: var(--font-plus-jakarta-sans);
+  color: var(--blackampwhite-white);
+}
+.buttonBody,
+.heightStructure {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.buttonBody {
+  overflow: hidden;
+  align-items: flex-start;
+  gap: var(--gap-9xs);
+}
+.heightStructure {
+  height: 24px;
+  align-items: center;
+}
+.content {
+  position: relative;
+  background-color: var(--color-silver);
+  width: 0.01px;
+  height: 0.01px;
+}
+.minwidth,
+.widthStructure {
+  overflow: hidden;
+  display: flex;
+}
+.minwidth {
+  flex-direction: row;
+  padding: 0 12.000000953674316px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.widthStructure {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.buttonbase,
+.needHelp1,
+.pleaseCheckOur {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.buttonbase {
+  height: 20.65%;
+  width: 85.32%;
+  top: 69.91%;
+  right: 7.34%;
+  bottom: 9.44%;
+  left: 7.34%;
+  border-radius: var(--br-xs);
+  background: linear-gradient(
+    126.97deg,
+    rgba(6, 11, 40, 0.74),
+    rgba(10, 14, 35, 0.71)
+  );
+  backdrop-filter: blur(10px);
+  flex-direction: row;
+  padding: 0 var(--padding-5xs);
+  box-sizing: border-box;
+  justify-content: center;
+}
+.needHelp1,
+.pleaseCheckOur {
+  top: 34.09px;
+  left: 0;
+  line-height: 100%;
+  width: 121px;
+  height: 10.52px;
+}
+.needHelp1 {
+  top: 0;
+  left: 3.5px;
+  font-size: var(--font-size-sm);
+  line-height: 140%;
+  width: 99px;
+  height: 18px;
+}
+.text1 {
+  position: absolute;
+  top: 45.19px;
+  left: 16.5px;
+  width: 121px;
+  height: 44.61px;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--blackampwhite-white);
+  font-family: var(--font-plus-jakarta-sans);
+}
+.iconChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xs);
+  background-color: var(--blackampwhite-white);
+  width: 35px;
+  height: 30.68px;
+}
+.ioniconhhelpcircle {
+  position: absolute;
+  top: 4.82px;
+  left: 5.5px;
+  width: 24px;
+  height: 21.04px;
+  overflow: hidden;
+}
+.icon2 {
+  position: absolute;
+  top: 14.03px;
+  left: 16.5px;
+  width: 35px;
+  height: 30.68px;
+}
+.backgroundParent,
+.needHelp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 148.59px;
+}
+.needHelp {
+  top: 825.81px;
+  left: 23px;
+  font-size: var(--font-size-2xs);
+  font-family: var(--font-font-awesome-5-free);
+}
+.signUpChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xs);
+  background-color: var(--color-gray);
+  box-shadow: 0 3.500000238418579px 5.5px rgba(0, 0, 0, 0.02);
+  width: 30px;
+  height: 26.3px;
+}
+.ioniconrrocketsharp {
+  position: absolute;
+  top: 6.57px;
+  left: 7.5px;
+  width: 15px;
+  height: 13.15px;
+  overflow: hidden;
+}
+.badges {
+  position: absolute;
+  top: 7px;
+  left: 45px;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 69px;
+  height: 12px;
+}
+.offers1,
+.signUp {
+  position: absolute;
+  top: 90px;
+  left: 15px;
+  width: 114px;
+  height: 26.3px;
+}
+.offers1 {
+  top: 7.01px;
+  left: 45.5px;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 44px;
+  height: 12.27px;
+}
+.profileChild,
+.signIn {
+  position: absolute;
+  top: 49px;
+  left: 15px;
+  width: 89.5px;
+  height: 26.3px;
+}
+.profileChild {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-mini);
+  background-color: var(--color-gray);
+  box-shadow: 0 3.500000238418579px 5.5px rgba(0, 0, 0, 0.02);
+  width: 219.5px;
+  height: 47.34px;
+}
+.profileItem {
+  position: absolute;
+  top: 10.52px;
+  left: 16px;
+  border-radius: var(--br-xs);
+  background-color: var(--color-royalblue);
+  width: 30px;
+  height: 26.3px;
+}
+.ioniconppersondefault {
+  position: absolute;
+  top: 17.09px;
+  left: 23.5px;
+  width: 15px;
+  height: 13.15px;
+  overflow: hidden;
+}
+.profile1 {
+  position: absolute;
+  top: 17.53px;
+  left: 61.5px;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 43px;
+  height: 12.27px;
+}
+.menu,
+.profile {
+  position: absolute;
+  width: 219.5px;
+}
+.profile {
+  top: 0;
+  left: 0;
+  height: 47.34px;
+  font-size: var(--font-size-smi);
+}
+.menu {
+  top: 109px;
+  left: 23px;
+  height: 116.3px;
+  text-align: left;
+  color: var(--blackampwhite-white);
+}
+.logo,
+.routerHackathon {
+  position: absolute;
+  width: 135px;
+  height: 30.44px;
+}
+.routerHackathon {
+  top: 0;
+  left: 0;
+  letter-spacing: 0.18em;
+  line-height: 100%;
+  font-weight: 500;
+  background: linear-gradient(97.89deg, #fff, rgba(117, 122, 140, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.logo {
+  top: 26px;
+  left: 59px;
+}
+.sidebar,
+.sidebarItem {
+  position: absolute;
+  top: 70.95px;
+  left: 15px;
+  width: 233.25px;
+  height: 1px;
+}
+.sidebar {
+  top: 14px;
+  left: 13px;
+  width: 264px;
+  height: 995px;
+}
+.offers {
+  position: relative;
+  background-color: var(--blackampwhite-white);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-plus-jakarta-sans);
+}

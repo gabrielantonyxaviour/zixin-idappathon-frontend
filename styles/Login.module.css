@@ -1,0 +1,292 @@
+.loginChild {
+  position: absolute;
+  top: -7px;
+  left: -14px;
+  background: linear-gradient(159.02deg, #471a52, #090d2e 58.69%, #9b2a76);
+  width: 1900px;
+  height: 1080px;
+}
+.imageIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 960px;
+  height: 1024px;
+  object-fit: cover;
+}
+.walletconnect {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 34.68%;
+  line-height: 24px;
+  font-weight: 600;
+}
+.walletconnectWcIcon {
+  position: absolute;
+  height: 57.14%;
+  width: 8.6%;
+  top: 21.43%;
+  right: 88.17%;
+  bottom: 21.43%;
+  left: 3.23%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.coinbase,
+.item {
+  position: absolute;
+}
+.item {
+  height: 20.29%;
+  width: 100%;
+  top: 79.71%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-7xl);
+  background-color: var(--blackampwhite-white);
+  border: 1px solid #3b99fc;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.coinbase {
+  top: calc(50% - 12px);
+  left: 40.05%;
+  line-height: 24px;
+  font-weight: 600;
+}
+.item1 {
+  position: absolute;
+  height: 20.29%;
+  width: 100%;
+  top: 50.72%;
+  right: 0;
+  bottom: 28.99%;
+  left: 0;
+  border-radius: var(--br-7xl);
+  background-color: var(--blackampwhite-white);
+  border: 1px solid #0052ff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.metamask1 {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 39.25%;
+  line-height: 24px;
+  font-weight: 600;
+}
+.connectAWallet,
+.metamask {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.metamask {
+  height: 20.29%;
+  top: 21.74%;
+  right: 0;
+  bottom: 57.97%;
+  border-radius: var(--br-7xl);
+  background-color: var(--blackampwhite-white);
+  overflow: hidden;
+  cursor: pointer;
+}
+.connectAWallet {
+  top: calc(50% - 138px);
+  font-size: var(--font-size-13xl);
+  line-height: 36px;
+  font-weight: 600;
+  color: var(--blackampwhite-white);
+  display: inline-block;
+}
+.walletLogin {
+  position: absolute;
+  top: 374px;
+  left: 1013px;
+  width: 372px;
+  height: 276px;
+}
+.div {
+  position: relative;
+  line-height: 12px;
+}
+.icon,
+.text {
+  align-items: center;
+}
+.icon {
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  padding: 0 var(--padding-12xs-5);
+  justify-content: flex-start;
+}
+.text {
+  position: relative;
+  font-size: var(--font-size-3xs);
+  line-height: 150%;
+  display: flex;
+  font-family: var(--font-plus-jakarta-sans);
+  color: var(--blackampwhite-white);
+  justify-content: center;
+  width: 89.5px;
+  height: 15px;
+  flex-shrink: 0;
+}
+.buttonBody,
+.heightStructure {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.buttonBody {
+  overflow: hidden;
+  align-items: flex-start;
+  gap: var(--gap-9xs);
+}
+.heightStructure {
+  height: 24px;
+  align-items: center;
+}
+.content {
+  position: relative;
+  background-color: var(--color-silver);
+  width: 0;
+  height: 0;
+}
+.minwidth {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: 0 12.000000953674316px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.buttonbase,
+.widthStructure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.widthStructure {
+  overflow: hidden;
+  flex-direction: column;
+}
+.buttonbase {
+  position: absolute;
+  height: 49.96%;
+  width: 15.19%;
+  top: 24.95%;
+  right: 2.43%;
+  bottom: 25.1%;
+  left: 82.38%;
+  border-radius: var(--br-xs);
+  background-color: var(--color-royalblue);
+  backdrop-filter: blur(120px);
+  flex-direction: row;
+  padding: 0 7.999999523162842px;
+  box-sizing: border-box;
+  font-family: var(--font-font-awesome-5-free);
+}
+.icon2,
+.text1 {
+  position: relative;
+}
+.icon2 {
+  width: 11px;
+  height: 11px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.text1 {
+  line-height: 150%;
+}
+.buttonBody1,
+.dashboard,
+.signIn,
+.signUp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.buttonBody1 {
+  overflow: hidden;
+  gap: var(--gap-9xs);
+}
+.dashboard,
+.signIn,
+.signUp {
+  position: absolute;
+  height: 99.81%;
+  width: 23.18%;
+  top: 0;
+  right: 0;
+  bottom: 0.19%;
+  left: 76.82%;
+  border-radius: var(--br-xs);
+  padding: 0 var(--padding-5xs);
+  box-sizing: border-box;
+}
+.dashboard,
+.signUp {
+  right: 34.29%;
+  left: 42.53%;
+}
+.dashboard {
+  width: 31.23%;
+  top: 0.19%;
+  right: 68.77%;
+  bottom: 0;
+  left: 0;
+}
+.pages {
+  position: absolute;
+  top: 23.96px;
+  left: 422px;
+  width: 261px;
+  height: 22.52px;
+  font-size: var(--font-size-3xs);
+  color: var(--blackampwhite-white);
+}
+.routerHackathon {
+  position: absolute;
+  top: 26px;
+  left: 23px;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.18em;
+  line-height: 100%;
+  font-weight: 500;
+  background: linear-gradient(97.89deg, #fff, rgba(117, 122, 140, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+}
+.menu {
+  position: absolute;
+  top: 65px;
+  left: 353px;
+  border-radius: var(--br-xl);
+  background: linear-gradient(
+    123.64deg,
+    rgba(255, 255, 255, 0) 0.01%,
+    rgba(255, 255, 255, 0.04)
+  );
+  backdrop-filter: blur(42px);
+  width: 987.5px;
+  height: 70px;
+  font-size: var(--font-size-2xs);
+}
+.login {
+  position: relative;
+  background-color: var(--blackampwhite-white);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-plus-jakarta-sans);
+}

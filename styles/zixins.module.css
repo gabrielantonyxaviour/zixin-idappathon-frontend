@@ -1,0 +1,56 @@
+
+.backgroundIcon,
+.imageIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 491px;
+  height: 344px;
+}
+.imageIcon {
+  top: 17.5px;
+  left: 544.5px;
+  width: 360px;
+  height: 255.5px;
+  display: none;
+}
+.ioniconaarrowforward {
+  position: absolute;
+  top: 77.5px;
+  left: 93px;
+  width: 13px;
+  height: 13px;
+  overflow: hidden;
+}
+.authenticateWithTwitter {
+  margin: 0;
+}
+.authenticateWithTwitterContainer,
+.twitterAuthBadge {
+  position: absolute;
+  top: 46.5px;
+  left: 0;
+  line-height: 24px;
+  display: inline-block;
+  width: 252px;
+}
+.twitterAuthBadge {
+  top: -10.5px;
+  font-size: var(--font-size-9xl);
+  line-height: 100%;
+  width: 266px;
+}
+.firstCard,
+.text2 {
+  position: absolute;
+  top: 61.5px;
+  left: 31px;
+  width: 266px;
+  height: 100.5px;
+}
+.firstCard {
+  top: 578px;
+  left: 307px;
+  width: 491px;
+  height: 344px;
+}
