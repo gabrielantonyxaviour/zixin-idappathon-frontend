@@ -1,11 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect} from "react";
 import styles from "../../styles/Sidebar.module.css";
-import { useCallback } from "react";
-const Sidebar = () => {
-  const [selected, setSelected] = useState(0);
-  const onprofilelick = useCallback(() => {}, []);
-  const onShijiclick = useCallback(() => {}, []);
-  const onZixinsclick = useCallback(() => {}, []);
+const Sidebar = (props: { value: number; }) => {
+  
+  useEffect(() => {
+    if(props.value == 0 ){
+      document.getElementById("profile").style.display = "block"
+      document.getElementById("badges").style.display = "none"
+      document.getElementById("offers").style.display = "none"
+    }
+    else if(props.value ==1){
+      document.getElementById("badges").style.display = "block"
+      document.getElementById("profile").style.display = "none"
+      document.getElementById("offers").style.display = "none"
+    }
+    else if(props.value ==2){
+      document.getElementById("badges").style.display = "none"
+      document.getElementById("profile").style.display = "none"
+      document.getElementById("offers").style.display = "block"
+    }
+  }, [])
+  
+
   return (
     <div className={styles.sidebar}>
       <div className={styles.sidebarChild} />
@@ -49,54 +64,43 @@ const Sidebar = () => {
         </div>
       </div>
       <div className={styles.menu}>
+      
         <a
-          className={selected == 2 ? styles.profile : styles.signUp}
+          className={styles.signUp}
           href="/badges"
-          style={{ color: "white" }}
-          onClick={() => {
-            setSelected(2);
-          }}
         >
-          <div className={styles.signUpChild} />
+          <div id='badges' className={styles.badgeselect} />
           <img
             className={styles.ioniconrrocketsharp}
             alt=""
-            src="/ioniconrrocketsharp.svg"
+            src="/vector2.png"
           />
           <div className={styles.badges}>Badges</div>
         </a>
+        
         <a
-          className={selected == 1 ? styles.profile : styles.signIn}
+          className={styles.signIn}
           href={"/offers"}
-          style={{ color: "white" }}
-          onClick={() => {
-            setSelected(1);
-          }}
         >
-          <div className={styles.signUpChild} />
+          <div id='offers' className={styles.offerselect} />
           <img
             className={styles.ioniconrrocketsharp}
             alt=""
-            src="/ioniconddocumentdefault.svg"
+            src="/vector.png"
           />
           <div className={styles.offers1}>Offers</div>
         </a>
         <a
-          className={selected == 0 ? styles.profile : styles.signIn}
+          className={styles.profile}
           href="/dashboard"
-          style={{ color: "white" }}
-          onClick={() => {
-            setSelected(0);
-          }}
         >
-          <div className={styles.profileChild} />
-          <div className={styles.profileItem} />
+          <div id='profile' className={styles.profileChild} />
           <img
             className={styles.ioniconppersondefault}
             alt=""
-            src="/ioniconppersondefault3.svg"
+            src="/vector3.png"
           />
-          <div className={styles.profile1}>Profile</div>
+          <div id="profile" className={styles.profile1}>Profile</div>
         </a>
       </div>
       <div className={styles.logo}>

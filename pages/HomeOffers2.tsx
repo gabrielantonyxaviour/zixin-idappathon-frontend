@@ -105,7 +105,7 @@ const HomeOffers2: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <Sidebar />
+      <Sidebar value={0} />
     </div>
   );
 };

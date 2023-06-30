@@ -191,10 +191,10 @@
 }
 .ioniconrrocketsharp {
   position: absolute;
-  top: 6.57px;
+  top: 3.57px;
   left: 7.5px;
-  width: 15px;
-  height: 13.15px;
+  width: 20px;
+  height: 20px;
   overflow: hidden;
 }
 .badges {
@@ -237,6 +237,27 @@
 .profileChild {
   top: 0;
   left: 0;
+  display: none;
+  border-radius: var(--br-mini);
+  background-color: var(--color-gray);
+  box-shadow: 0 3.500000238418579px 5.5px rgba(0, 0, 0, 0.02);
+  width: 219.5px;
+  height: 47.34px;
+}
+.badgeselect {
+  margin-left: -20px;
+  margin-top: -9px;
+  display: none;
+  border-radius: var(--br-mini);
+  background-color: var(--color-gray);
+  box-shadow: 0 3.500000238418579px 5.5px rgba(0, 0, 0, 0.02);
+  width: 219.5px;
+  height: 47.34px;
+}
+.offerselect {
+  margin-left: -20px;
+  margin-top: -9px;
+  display: none;
   border-radius: var(--br-mini);
   background-color: var(--color-gray);
   box-shadow: 0 3.500000238418579px 5.5px rgba(0, 0, 0, 0.02);
@@ -254,10 +275,10 @@
 }
 .ioniconppersondefault {
   position: absolute;
-  top: 17.09px;
+  top: 13.09px;
   left: 23.5px;
-  width: 15px;
-  height: 13.15px;
+  width: 22px;
+  height: 22px;
   overflow: hidden;
 }
 .profile1 {
@@ -265,10 +286,10 @@
   top: 17.53px;
   left: 61.5px;
   line-height: 100%;
-  font-weight: 500;
+  font-weight: 510;
   display: flex;
   align-items: center;
-  width: 43px;
+  width: 44px;
   height: 12.27px;
 }
 .menu,

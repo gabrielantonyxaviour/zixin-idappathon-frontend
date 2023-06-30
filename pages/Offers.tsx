@@ -49,7 +49,7 @@ const Offers: FunctionComponent = () => {
           description={"Make 500 commit in github"}
         />
       </div>
-      <Sidebar />
+      <Sidebar value={2} />
     </div>
   );
 };

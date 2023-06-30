@@ -82,7 +82,7 @@ const Badges: FunctionComponent = () => {
           click={facebook}
         />
       </div>
-      <Sidebar />
+      <Sidebar value={1} />
     </div>
   );
 };
