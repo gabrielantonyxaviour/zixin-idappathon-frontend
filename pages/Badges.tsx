@@ -18,9 +18,11 @@ const Badges: FunctionComponent = () => {
     fetch("http://localhost:5000/auth/google/accesstoken")
       .then((response) => response.json())
       .then((data) => {
-        console.log("Received data:", data);
-        setGoogleAccessToken(data.accessToken);
-        console.log("Google Access Token:", googleAccessToken);
+        if (data.accessToken) {
+          console.log("Received data:", data);
+          setGoogleAccessToken(data.accessToken);
+          console.log("Google Access Token:", data.accessToken);
+        }
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -31,9 +33,11 @@ const Badges: FunctionComponent = () => {
     fetch("http://localhost:5000/auth/github/accesstoken")
       .then((response) => response.json())
       .then((data) => {
-        console.log("Received data:", data);
-        setGithubAccessToken(data.accessToken);
-        console.log("Github Access Token:", githubAccessToken);
+        if (data.accessToken) {
+          console.log("Received data:", data);
+          setGithubAccessToken(data.accessToken);
+          console.log("Github Access Token:", data.accessToken);
+        }
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -44,9 +48,11 @@ const Badges: FunctionComponent = () => {
     fetch("http://localhost:5000/auth/linkedin/accesstoken")
       .then((response) => response.json())
       .then((data) => {
-        console.log("Received data:", data);
-        setLinkedinAccessToken(data.accessToken);
-        console.log("linkedin Access Token:", linkedinAccessToken);
+        if (data.accessToken) {
+          console.log("Received data:", data);
+          setLinkedinAccessToken(data.accessToken);
+          console.log("linkedin Access Token:", data.accessToken);
+        }
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -57,9 +63,11 @@ const Badges: FunctionComponent = () => {
     fetch("http://localhost:5000/auth/facebook/accesstoken")
       .then((response) => response.json())
       .then((data) => {
-        console.log("Received data:", data);
-        setFacebookAccessToken(data.accessToken);
-        console.log("Facebook Access Token:", facebookAccessToken);
+        if (data.accessToken) {
+          console.log("Received data:", data);
+          setFacebookAccessToken(data.accessToken);
+          console.log("Facebook Access Token:", data.accessToken);
+        }
       })
       .catch((error) => {
         console.error("Error:", error);
