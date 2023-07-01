@@ -1,28 +1,24 @@
 import React, { useEffect, useState } from "react";
 import styles from "../../styles/Sidebar.module.css";
-const Sidebar = (props: { value: number; }) => {
-  
+const Sidebar = (props: { value: number }) => {
   useEffect(() => {
     const profilediv = document.getElementById("profile")!;
     const badgesdiv = document.getElementById("badges")!;
     const offersdiv = document.getElementById("offers")!;
-    if(props.value == 0 ){
-      profilediv.style.display = "block"
-      badgesdiv.style.display = "none"
-      offersdiv.style.display = "none"
+    if (props.value == 0) {
+      profilediv.style.display = "block";
+      badgesdiv.style.display = "none";
+      offersdiv.style.display = "none";
+    } else if (props.value == 1) {
+      badgesdiv.style.display = "block";
+      profilediv.style.display = "none";
+      offersdiv.style.display = "none";
+    } else if (props.value == 2) {
+      badgesdiv.style.display = "none";
+      profilediv.style.display = "none";
+      offersdiv.style.display = "block";
     }
-    else if(props.value ==1){
-      badgesdiv.style.display = "block"
-      profilediv.style.display = "none"
-      offersdiv.style.display = "none"
-    }
-    else if(props.value ==2){
-      badgesdiv.style.display = "none"
-      profilediv.style.display = "none"
-      offersdiv.style.display = "block"
-    }
-  }, [])
-
+  }, []);
 
   return (
     <div className={styles.sidebar}>
@@ -67,25 +63,18 @@ const Sidebar = (props: { value: number; }) => {
         </div>
       </div>
       <div className={styles.menu}>
-      
-        <a
-          className={styles.signUp}
-          href="/badges"
-        >
-          <div id='badges' className={styles.badgeselect} />
+        <a className={styles.signUp} href="/badges">
+          <div id="badges" className={styles.badgeselect} />
           <img
             className={styles.ioniconrrocketsharp}
             alt=""
             src="/vector2.png"
           />
-          <div className={styles.badges}>Badges</div>
+          <div className={styles.badges}>Zixins</div>
         </a>
-        
-        <a
-          className={styles.signIn}
-          href={"/offers"}
-        >
-          <div id='offers' className={styles.offerselect} />
+
+        <a className={styles.signIn} href={"/offers"}>
+          <div id="offers" className={styles.offerselect} />
           <img
             className={styles.ioniconrrocketsharp}
             alt=""
@@ -93,17 +82,16 @@ const Sidebar = (props: { value: number; }) => {
           />
           <div className={styles.offers1}>Offers</div>
         </a>
-        <a
-          className={styles.profile}
-          href="/dashboard"
-        >
-          <div id='profile' className={styles.profileChild} />
+        <a className={styles.profile} href="/dashboard">
+          <div id="profile" className={styles.profileChild} />
           <img
             className={styles.ioniconppersondefault}
             alt=""
             src="/vector3.png"
           />
-          <div id="profile" className={styles.profile1}>Profile</div>
+          <div id="profile" className={styles.profile1}>
+            Profile
+          </div>
         </a>
       </div>
       <div className={styles.logo}>
