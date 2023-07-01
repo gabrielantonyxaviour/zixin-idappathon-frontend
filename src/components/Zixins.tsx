@@ -10,7 +10,7 @@ interface ChildComponentProps {
 const Zixins: React.FC<ChildComponentProps> = (props) => {
   const { name, imgsrc, description, click,accesstoken } = props;
   let button='bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded  mt-32 opacity-50 cursor-not-allowed'
-  accesstoken =='not received' && accesstoken !=null && accesstoken != undefined ? button='bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded  mt-32 opacity-50 cursor-not-allowed': button='bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded  mt-32'
+  accesstoken =='not received' || accesstoken ==null || accesstoken == undefined ? button='bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded  mt-32 opacity-50 cursor-not-allowed': button='bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded  mt-32'
   return (
     <div>
       <img
