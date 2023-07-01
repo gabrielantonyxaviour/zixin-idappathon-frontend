@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useEffect } from "react";
 import styles from "../styles/Badges.module.css";
 import Sidebar from "../src/components/Sidebar";
 import Zixins from "../src/components/Zixins";
@@ -13,6 +13,65 @@ const Badges: FunctionComponent = () => {
     React.useState("not received");
   const [linkedinAccessToken, setLinkedinAccessToken] =
     React.useState("not received");
+useEffect(() => {
+  fetch("http://localhost:5000/auth/google/accesstoken")
+  .then((response) => response.json())
+  .then((data) => {
+    if (data.accessToken) {
+      console.log("Received data:", data);
+      setGoogleAccessToken(data.accessToken);
+      console.log("Google Access Token:", data.accessToken);
+    }
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
+}, [])
+
+useEffect(() => {
+  fetch("http://localhost:5000/auth/github/accesstoken")
+  .then((response) => response.json())
+  .then((data) => {
+    if (data.accessToken) {
+      console.log("Received data:", data);
+      setGithubAccessToken(data.accessToken);
+      console.log("Github Access Token:", data.accessToken);
+    }
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
+}, [])
+useEffect(() => {
+  fetch("http://localhost:5000/auth/facebook/accesstoken")
+  .then((response) => response.json())
+  .then((data) => {
+    if (data.accessToken) {
+      console.log("Received data:", data);
+      setFacebookAccessToken(data.accessToken);
+      console.log("Facebook Access Token:", data.accessToken);
+    }
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
+}, [])
+useEffect(() => {
+  fetch("http://localhost:5000/auth/linkedin/accesstoken")
+  .then((response) => response.json())
+  .then((data) => {
+    if (data.accessToken) {
+      console.log("Received data:", data);
+      setLinkedinAccessToken(data.accessToken);
+      console.log("Linkedin Access Token:", data.accessToken);
+    }
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
+}
+, [])
+
   const google = () => {
     window.open("http://localhost:5000/auth/google", "_self");
     fetch("http://localhost:5000/auth/google/accesstoken")
@@ -110,6 +169,7 @@ const Badges: FunctionComponent = () => {
           description="Linkedin Auth Badge"
           imgsrc="/background2.svg"
           click={linkedin}
+          accesstoken={linkedinAccessToken}
         />
       </div>
       <div className={styles.firstCard}>
@@ -118,6 +178,7 @@ const Badges: FunctionComponent = () => {
           description="Google Auth Badge"
           imgsrc="/background3@2x.png"
           click={google}
+          accesstoken={googleAccessToken}
         />
       </div>
       <div className={styles.firstCard4}>
@@ -126,6 +187,7 @@ const Badges: FunctionComponent = () => {
           description="Github Auth Badge"
           imgsrc="/background4.svg"
           click={github}
+          accesstoken={githubAccessToken}
         />
       </div>
       <div className={styles.firstCard5}>
@@ -134,6 +196,7 @@ const Badges: FunctionComponent = () => {
           description="Facebook Auth Badge"
           imgsrc="/background5.svg"
           click={facebook}
+          accesstoken={facebookAccessToken}
         />
       </div>
       <Sidebar value={1} />
