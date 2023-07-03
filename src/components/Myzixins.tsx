@@ -1,47 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FunctionComponent } from "react";
 import styles from "../../styles/Mynfts.module.css";
 import Profilecard from "./Profilecard";
 
 const Myzixins: FunctionComponent = () => {
-  const [profiles, setProfiles] = useState([
-    {
-      name: "Linkedin Auth",
-      description: "linkedin",
-      imgsrc: "/image5.svg",
-    },
-    {
-      name: "Github Auth",
-      description: "Github",
-      imgsrc: "/image3.svg",
-    },
-    {
-      name: "Google Auth",
-      description: "Google",
-      imgsrc: "/image6@2x.png",
-    },
-    {
-        name: "Github Auth",
-        description: "Github",
-        imgsrc: "/image3.svg",
-      },
-      {
-        name: "Linkedin Auth",
-        description: "linkedin",
-        imgsrc: "/image5.svg",
-      },
- 
-  ]);
+  const [profiles, setProfiles] = useState([]);
 
-  const addProfile = () => {
-    const newProfile = {
-      name: "New Profile",
-      description: "New Description",
-      imgsrc: "/placeholder-image.png",
-    };
-    setProfiles([...profiles, newProfile]);
-  };
-
+  useEffect(() => {
+    setTimeout(() => {
+      setProfiles([
+        ...profiles,
+        {
+          name: "Github Auth",
+          description: "Github",
+          imgsrc: "/image3.svg",
+        },
+        {
+          name: "Google Auth",
+          description: "Google",
+          imgsrc: "/image6@2x.png",
+        },
+      ]);
+    }, 1000);
+  }, []);
   return (
     <div className={styles.whole}>
       <div className={styles.back}>
@@ -52,6 +33,7 @@ const Myzixins: FunctionComponent = () => {
                 name={profile.name}
                 description={profile.description}
                 imgsrc={profile.imgsrc}
+                isZixin={true}
               />
             </div>
           ))}

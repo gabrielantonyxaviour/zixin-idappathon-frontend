@@ -6,31 +6,10 @@ import Profilecard from "./Profilecard";
 const Myshijis: FunctionComponent = () => {
   const [profiles, setProfiles] = useState([
     {
-      name: "Linkedin Auth",
-      description: "linkedin",
-      imgsrc: "/image5.svg",
-    },
-    {
-      name: "Github Auth",
-      description: "Github",
+      name: "Github Mr.Popular",
+      description: "shiji",
       imgsrc: "/image3.svg",
     },
-    {
-      name: "Google Auth",
-      description: "Google",
-      imgsrc: "/image6@2x.png",
-    },
-    {
-        name: "Github Auth",
-        description: "Github",
-        imgsrc: "/image3.svg",
-      },
-      {
-        name: "Linkedin Auth",
-        description: "linkedin",
-        imgsrc: "/image5.svg",
-      },
- 
   ]);
 
   const addProfile = () => {
@@ -52,6 +31,7 @@ const Myshijis: FunctionComponent = () => {
                 name={profile.name}
                 description={profile.description}
                 imgsrc={profile.imgsrc}
+                isZixin={false}
               />
             </div>
           ))}

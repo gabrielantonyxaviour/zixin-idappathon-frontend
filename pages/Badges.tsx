@@ -1,9 +1,10 @@
-import { FunctionComponent, useEffect } from "react";
+import { FunctionComponent, useEffect, useState } from "react";
 import styles from "../styles/Badges.module.css";
 import Sidebar from "../src/components/Sidebar";
 import Zixins from "../src/components/Zixins";
 import React from "react";
 import axios from "axios";
+
 const Badges: FunctionComponent = () => {
   const [googleAccessToken, setGoogleAccessToken] =
     React.useState("not received");
@@ -45,7 +46,7 @@ const Badges: FunctionComponent = () => {
   useEffect(() => {
     fetch("http://localhost:5000/auth/facebook/accesstoken")
       .then((response) => response.json())
-      .then((data) => {
+      .then(async (data) => {
         if (data.accessToken) {
           console.log("Received data:", data);
           setFacebookAccessToken(data.accessToken);
@@ -65,7 +66,6 @@ const Badges: FunctionComponent = () => {
           setGoogleAccessToken(data.accessToken);
           console.log("Google Access Token:", data.accessToken);
         }
-        console.log("DBJVSUBIBHVEDHIUH");
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -86,27 +86,32 @@ const Badges: FunctionComponent = () => {
       });
   }, []);
   const createnft = () => {
-    const metadataString = JSON.stringify({ title: 'My NFT' });
+    const metadataString = JSON.stringify({ title: "My NFT" });
     const accessToken = process.env.NFT_STORAGE_KEY;
-  
-    axios.post('https://zixins-be1.adaptable.app/auth/store', {metadataString}, {
-      headers: {
-        Authorization: `Bearer ${accessToken}`
-      }
-    })
-      .then(response => {
+
+    axios
+      .post(
+        "https://zixins-be1.adaptable.app/auth/store",
+        { metadataString },
+        {
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+          },
+        }
+      )
+      .then((response) => {
         console.log(response.data);
       })
-      .catch(error => {
+      .catch((error) => {
         console.error(error);
       });
-  }
-  
+  };
+
   const google = () => {
     window.open("http://localhost:5000/auth/google", "_self");
     fetch("http://localhost:5000/auth/google/accesstoken")
       .then((response) => response.json())
-      .then((data) => {
+      .then(async (data) => {
         if (data.accessToken) {
           console.log("Received data:", data);
           setGoogleAccessToken(data.accessToken);
@@ -117,12 +122,12 @@ const Badges: FunctionComponent = () => {
         console.error("Error:", error);
       });
   };
-  
+
   const github = () => {
     window.open("http://localhost:5000/auth/github", "_self");
     fetch("http://localhost:5000/auth/github/accesstoken")
       .then((response) => response.json())
-      .then((data) => {
+      .then(async (data) => {
         if (data.accessToken) {
           console.log("Received data:", data);
           setGithubAccessToken(data.accessToken);
@@ -152,7 +157,7 @@ const Badges: FunctionComponent = () => {
     window.open("http://localhost:5000/auth/facebook  ", "_self");
     fetch("http://localhost:5000/auth/facebook/accesstoken")
       .then((response) => response.json())
-      .then((data) => {
+      .then(async (data) => {
         if (data.accessToken) {
           console.log("Received data:", data);
           setFacebookAccessToken(data.accessToken);
@@ -197,6 +202,7 @@ const Badges: FunctionComponent = () => {
       <div className={styles.firstCard2}>
         <Zixins
           name="linkedin"
+          zixinId={3}
           description="Linkedin Auth Badge"
           imgsrc="/background2.svg"
           click={createnft}
@@ -206,6 +212,7 @@ const Badges: FunctionComponent = () => {
       <div className={styles.firstCard}>
         <Zixins
           name="Google"
+          zixinId={1}
           description="Google Auth Badge"
           imgsrc="/background3@2x.png"
           click={google}
@@ -215,6 +222,7 @@ const Badges: FunctionComponent = () => {
       <div className={styles.firstCard4}>
         <Zixins
           name="Github"
+          zixinId={0}
           description="Github Auth Badge"
           imgsrc="/background4.svg"
           click={github}
@@ -224,6 +232,7 @@ const Badges: FunctionComponent = () => {
       <div className={styles.firstCard5}>
         <Zixins
           name="Facebook"
+          zixinId={2}
           description="Facebook Auth Badge"
           imgsrc="/background5.svg"
           click={facebook}

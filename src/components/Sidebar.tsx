@@ -80,7 +80,7 @@ const Sidebar = (props: { value: number }) => {
             alt=""
             src="/vector.png"
           />
-          <div className={styles.offers1}>Offers</div>
+          <div className={styles.offers1}>Shijis</div>
         </a>
         <a className={styles.profile} href="/dashboard">
           <div id="profile" className={styles.profileChild} />
