@@ -1,10 +1,11 @@
-.homeoffers2Child {
+.homeoffers1Child {
   position: absolute;
   top: -7px;
   left: -14px;
   background: linear-gradient(159.02deg, #471a52, #090d2e 58.69%, #9b2a76);
-  width: 1900px;
+  width: 1920px;
   height: 1080px;
+  z-index: 0;
 }
 .profile {
   position: absolute;
@@ -205,6 +206,7 @@
   height: 13px;
   overflow: hidden;
 }
+
 .niceToSee,
 .welcomeBack {
   position: absolute;
@@ -251,14 +253,6 @@
   width: 280px;
   height: 30px;
 }
-.chainselect {
-  position: absolute;
-  top: 305px;
-  left: 1048px;
-  width: 368px;
-  height: 55px;
-  font-size: var(--font-size-base);
-}
 .teams,
 .text3 {
   display: flex;
@@ -280,11 +274,12 @@
   right: 0;
   bottom: 0;
   left: 50%;
-  border-radius: var(--br-xs);
   background-color: var(--color-royalblue);
+  border-radius: var(--br-xs);
   flex-direction: row;
   padding: 0 7.999999523162842px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .text4 {
   position: relative;
@@ -299,6 +294,7 @@
   bottom: 0;
   left: 0;
   border-radius: var(--br-xs);
+  /* background-color: var(--color-royalblue); */
   backdrop-filter: blur(120px);
   display: flex;
   flex-direction: row;
@@ -306,15 +302,15 @@
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 .background,
 .tabs {
   position: absolute;
-  top: 37px;
-  left: 22px;
+  top: -147px;
+  left: 40px;
   width: 269px;
   height: 35px;
+  z-index: 2;
 }
 .background {
   top: 0;
@@ -352,7 +348,7 @@
   font-family: var(--font-plus-jakarta-sans);
   color: var(--blackampwhite-white);
   justify-content: center;
-  width: 64px;
+  width: 47.5px;
   height: 15px;
   flex-shrink: 0;
 }
@@ -373,9 +369,9 @@
 .buttonbase {
   position: absolute;
   height: 27.71%;
-  width: 30.56%;
+  width: 35.6%;
   top: 72.29%;
-  right: 69.31%;
+  right: 64.27%;
   bottom: 0;
   left: 0.13%;
   border-radius: var(--br-xs);
@@ -390,7 +386,71 @@
   color: var(--color-black);
   font-family: var(--font-font-awesome-5-free);
 }
-.get500Stars {
+.authenticateWithLinkedin {
+  margin: 0;
+}
+.authenticateWithLinkedinContainer,
+.linkedinAuth {
+  position: absolute;
+  top: 29.85px;
+  left: 0.37px;
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  display: inline-block;
+  width: 286.35px;
+  height: 38.8px;
+}
+.linkedinAuth {
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-lg);
+  line-height: 140%;
+  width: 125px;
+  height: 23px;
+}
+.text5 {
+  position: absolute;
+  top: 209px;
+  left: 4px;
+  width: 286.72px;
+  height: 116.67px;
+}
+.buttonbase1,
+.card3,
+.imageIcon1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 341.77px;
+  height: 176.89px;
+}
+.buttonbase1,
+.card3 {
+  top: 0.4px;
+  left: 731.83px;
+  height: 325.67px;
+}
+.buttonbase1 {
+  height: 27.71%;
+  width: 31.8%;
+  top: 72.29%;
+  right: 68.07%;
+  bottom: 0;
+  left: 0.13%;
+  border-radius: var(--br-xs);
+  border: 1px solid var(--blackampwhite-white);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 0 7.999999523162842px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-black);
+  font-family: var(--font-font-awesome-5-free);
+}
+.authenticateWithGithubContainer,
+.githubAuth {
   position: absolute;
   top: 29.85px;
   left: 0.42px;
@@ -400,71 +460,50 @@
   width: 320.53px;
   height: 38.8px;
 }
-.githubMrpopular,
-.text5 {
-  position: absolute;
-  width: 334px;
-}
-.githubMrpopular {
+.githubAuth {
   top: 0;
   left: 0;
   font-size: var(--font-size-lg);
   line-height: 140%;
-  display: inline-block;
+  width: 114px;
   height: 23px;
 }
-.text5 {
+.text7 {
+  position: absolute;
   top: 209.4px;
   left: 7.89px;
+  width: 320.95px;
   height: 116.67px;
 }
-.card2,
-.imageIcon1 {
+.buttonbase2,
+.card2 {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 341.77px;
-  height: 176.89px;
-}
-.card2 {
   left: 363.94px;
-  width: 341.89px;
+  width: 341.77px;
   height: 326.07px;
 }
-.buttonbase1,
-.text8 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.text8 {
-  position: relative;
-  font-size: var(--font-size-3xs);
-  line-height: 150%;
-  font-family: var(--font-plus-jakarta-sans);
-  color: var(--blackampwhite-white);
-  width: 66px;
-  height: 15px;
-  flex-shrink: 0;
-}
-.buttonbase1 {
-  position: absolute;
+.buttonbase2 {
   height: 27.71%;
-  width: 30.56%;
+  width: 35.93%;
   top: 72.29%;
-  right: 69.3%;
+  right: 63.9%;
   bottom: 0;
-  left: 0.14%;
+  left: 0.17%;
   border-radius: var(--br-xs);
   border: 1px solid var(--blackampwhite-white);
   box-sizing: border-box;
+  display: flex;
   flex-direction: row;
   padding: 0 7.999999523162842px;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: var(--color-black);
   font-family: var(--font-font-awesome-5-free);
 }
-.make500Commit {
+.authenticateWithGoogleContainer,
+.googleAuth {
   position: absolute;
   top: 29.85px;
   left: 0.48px;
@@ -474,30 +513,45 @@
   width: 283.58px;
   height: 38.8px;
 }
-.text7 {
+.googleAuth {
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-lg);
+  line-height: 140%;
+  width: 219px;
+  height: 23px;
+}
+.text9 {
   position: absolute;
   top: 209.4px;
   left: 7.83px;
-  width: 334px;
+  width: 284.06px;
   height: 116.67px;
 }
 .card1,
-.cards,
+.imageIcon3,
 .tokenview {
   position: absolute;
   top: 0;
   left: 0;
-  width: 341.83px;
+  width: 341.77px;
+}
+.imageIcon3 {
+  height: 176.89px;
+  object-fit: cover;
+}
+.card1,
+.tokenview {
   height: 326.07px;
 }
-.cards,
 .tokenview {
-  top: 95.6px;
+  top: -95.6px;
   left: 22.17px;
-  width: 705.83px;
+  width: 1073.6px;
   text-align: left;
   font-size: var(--font-size-2xs);
 }
+
 .tokenview {
   top: 376px;
   left: 307px;
@@ -514,7 +568,7 @@
   height: 147.4px;
   object-fit: cover;
 }
-.icon8 {
+.icon10 {
   overflow: hidden;
   display: none;
   flex-direction: column;
@@ -522,25 +576,25 @@
   align-items: center;
   justify-content: flex-start;
 }
-.text9 {
+.text11 {
   position: relative;
   font-size: var(--font-size-3xs);
   line-height: 100%;
   font-family: var(--font-plus-jakarta-sans);
   color: var(--blackampwhite-white);
 }
-.buttonbase2,
-.minwidth5 {
+.buttonbase3,
+.minwidth6 {
   display: flex;
   flex-direction: row;
 }
-.minwidth5 {
+.minwidth6 {
   overflow: hidden;
   padding: 0 12.000000953674316px;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.buttonbase2 {
+.buttonbase3 {
   position: absolute;
   height: 27.61%;
   width: 85.32%;
@@ -576,12 +630,12 @@
   width: 121px;
   height: 10.44px;
 }
-.icon10,
-.text10 {
+.icon12,
+.text12 {
   position: absolute;
   left: 16.5px;
 }
-.text10 {
+.text12 {
   top: 44.83px;
   width: 121px;
   height: 44.25px;
@@ -597,7 +651,7 @@
   color: var(--blackampwhite-white);
   font-family: var(--font-plus-jakarta-sans);
 }
-.icon10 {
+.icon12 {
   top: 13.91px;
   border-radius: var(--br-xs);
   width: 35px;
@@ -698,7 +752,6 @@
   top: 10.41px;
   left: 10.23px;
   border-radius: var(--br-xs);
-  background-color: var(--color-gray);
   width: 30.68px;
   height: 26.09px;
 }
@@ -738,7 +791,7 @@
   position: relative;
   margin-top: -7px;
 }
-.div6,
+.div8,
 .menu {
   position: absolute;
 }
@@ -757,7 +810,7 @@
   font-size: var(--font-size-sm);
   color: var(--blackampwhite-white);
 }
-.div6 {
+.div8 {
   top: 25.79px;
   left: 59px;
   font-size: var(--font-size-base);
@@ -781,6 +834,7 @@
 }
 .sidebar {
   top: 16px;
+  left: 24px;
   border-radius: var(--br-xl);
   background: linear-gradient(109.27deg, #21123c, #42194f);
   backdrop-filter: blur(120px);
@@ -790,7 +844,7 @@
   font-size: var(--font-size-2xs);
   color: var(--color-black);
 }
-.homeoffers2 {
+.homeoffers1 {
   position: relative;
   background-color: var(--blackampwhite-white);
   border: 1px solid var(--color-black);
@@ -798,6 +852,12 @@
   width: 100%;
   height: 1024px;
   overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--blackampwhite-white);
+  font-family: var(--font-plus-jakarta-sans);
+}
+.whole{
   text-align: left;
   font-size: var(--font-size-sm);
   color: var(--blackampwhite-white);
