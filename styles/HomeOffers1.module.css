@@ -5,6 +5,7 @@
   background: linear-gradient(159.02deg, #471a52, #090d2e 58.69%, #9b2a76);
   width: 1920px;
   height: 1080px;
+  z-index: 0;
 }
 .profile {
   position: absolute;
@@ -205,6 +206,7 @@
   height: 13px;
   overflow: hidden;
 }
+
 .niceToSee,
 .welcomeBack {
   position: absolute;
@@ -303,10 +305,11 @@
 .background,
 .tabs {
   position: absolute;
-  top: 37px;
-  left: 22px;
+  top: -147px;
+  left: 40px;
   width: 269px;
   height: 35px;
+  z-index: 2;
 }
 .background {
   top: 0;
@@ -525,7 +528,6 @@
   height: 116.67px;
 }
 .card1,
-.cards,
 .imageIcon3,
 .tokenview {
   position: absolute;
@@ -538,18 +540,17 @@
   object-fit: cover;
 }
 .card1,
-.cards,
 .tokenview {
   height: 326.07px;
 }
-.cards,
 .tokenview {
-  top: 95.6px;
+  top: -95.6px;
   left: 22.17px;
   width: 1073.6px;
   text-align: left;
   font-size: var(--font-size-2xs);
 }
+
 .tokenview {
   top: 376px;
   left: 307px;
@@ -850,6 +851,12 @@
   width: 100%;
   height: 1024px;
   overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--blackampwhite-white);
+  font-family: var(--font-plus-jakarta-sans);
+}
+.whole{
   text-align: left;
   font-size: var(--font-size-sm);
   color: var(--blackampwhite-white);

@@ -1,29 +1,9 @@
 .text5 {
-  position: absolute;
-  top: 209px;
+  position: relative;
+  /* top: 209px;
   left: 4px;
   width: 286.72px;
-  height: 116.67px;
-}
-.buttonbase {
-  position: absolute;
-  height: 27.71%;
-  width: 35.6%;
-  top: 72.29%;
-  right: 64.27%;
-  bottom: 0;
-  left: 0.13%;
-  border-radius: var(--br-xs);
-  border: 1px solid var(--blackampwhite-white);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  padding: 0 7.999999523162842px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: var(--color-black);
-  font-family: var(--font-font-awesome-5-free);
+  height: 116.67px; */
 }
 .widthStructure {
   display: flex;
@@ -94,9 +74,9 @@
 }
 .authenticateWithLinkedinContainer,
 .linkedinAuth {
-  position: absolute;
-  top: 29.85px;
-  left: 0.37px;
+  position: relative;
+  top: 3px;
+  left: 10px;
   font-size: var(--font-size-base);
   line-height: 24px;
   display: inline-block;
@@ -109,7 +89,7 @@
 
 .linkedinAuth {
   top: 0;
-  left: 0;
+  left: 10;
   font-size: var(--font-size-lg);
   line-height: 140%;
   width: 125px;
@@ -118,9 +98,12 @@
 .buttonbase1,
 .card3,
 .imageIcon1 {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 341.77px;
   height: 176.89px;
+}
+.whole{
+  padding-left:20px;
 }
