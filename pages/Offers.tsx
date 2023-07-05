@@ -5,7 +5,10 @@ import React from "react";
 import Shiji from "../src/components/Shiji";
 const Offers: FunctionComponent = () => {
   return (
+    <>
+    
     <div className={styles.offers}>
+      
       <div className={styles.offersChild} />
       <div className={styles.text}>
         <div className={styles.breadcrumbitemprevious}>
@@ -51,6 +54,7 @@ const Offers: FunctionComponent = () => {
       </div>
       <Sidebar value={2} />
     </div>
+    </>
   );
 };
 

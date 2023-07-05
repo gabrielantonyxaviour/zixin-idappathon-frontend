@@ -3,7 +3,7 @@ import styles from "../styles/Badges.module.css";
 import Sidebar from "../src/components/Sidebar";
 import Zixins from "../src/components/Zixins";
 import React from "react";
-import { access } from "fs";
+import axios from "axios";
 const Badges: FunctionComponent = () => {
   const [googleAccessToken, setGoogleAccessToken] =
     React.useState("not received");
@@ -70,7 +70,23 @@ const Badges: FunctionComponent = () => {
         console.error("Error:", error);
       });
   }, []);
-
+  const createnft = () => {
+    const metadataString = JSON.stringify({ title: 'My NFT' });
+    const accessToken = process.env.NFT_STORAGE_KEY;
+  
+    axios.post('https://zixins-be1.adaptable.app/auth/store', {metadataString}, {
+      headers: {
+        Authorization: `Bearer ${accessToken}`
+      }
+    })
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }
+  
   const google = () => {
     window.open("http://localhost:5000/auth/google", "_self");
     fetch("http://localhost:5000/auth/google/accesstoken")
@@ -86,6 +102,7 @@ const Badges: FunctionComponent = () => {
         console.error("Error:", error);
       });
   };
+  
   const github = () => {
     window.open("http://localhost:5000/auth/github", "_self");
     fetch("http://localhost:5000/auth/github/accesstoken")
@@ -167,7 +184,7 @@ const Badges: FunctionComponent = () => {
           name="linkedin"
           description="Linkedin Auth Badge"
           imgsrc="/background2.svg"
-          click={linkedin}
+          click={createnft}
           accesstoken={linkedinAccessToken}
         />
       </div>

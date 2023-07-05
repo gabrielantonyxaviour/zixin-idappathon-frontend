@@ -1,11 +1,13 @@
 import styles from "../../styles/Topbar.module.css";
 import React, { useEffect } from "react";
-import { useAccount} from "wagmi";
-import {useAccountModal } from "@rainbow-me/rainbowkit";
+import { useAccount, useNetwork} from "wagmi";
+import {useAccountModal, useChainModal } from "@rainbow-me/rainbowkit";
 
 import { useBalance } from 'wagmi'
 
 const Topbar = () => {
+  const { openChainModal } = useChainModal();
+  const { chain} = useNetwork()
   const { address,isDisconnected } = useAccount();
   const { openAccountModal } = useAccountModal();  
   useEffect(() => {
@@ -17,7 +19,20 @@ const Topbar = () => {
     address: address,
   })
   return (
+    <>
+    
+    <div className={styles.totalpos}>
+    <div className={styles.back}></div>
+    <div className={styles.chainselect} onClick={openChainModal}>
+    <img
+      className={styles.backgroundIcon2}
+      alt=""
+      src="/background9@2x.png"
+    />
+    <b className={styles.ethereum}>{chain!= undefined ? chain.name:'loading'}</b>
+  </div>
     <div className={styles.profileElements}>
+      
       <div className={styles.projects} onClick={openAccountModal}>
         <div className={styles.buttonBody}>
                   <img src="/settings.png" />
@@ -30,9 +45,10 @@ const Topbar = () => {
           <b className={styles.DisDisconnectedWallet}>Wallet</b>
         </div>
         <img className={styles.imageIcon} alt="" src="/image2@2x.png" />
-        <img className={styles.icon1} alt="" src="/icon10.svg" />
       </div>
     </div>
+    </div>
+    </>
   );
 };
 

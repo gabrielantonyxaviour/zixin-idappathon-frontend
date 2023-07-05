@@ -4,7 +4,6 @@ import Sidebar from "./Sidebar";
 import Profilecard from "./Profilecard";
 import React from "react";
 import Topbar from "./Topbar";
-import Image from "next/image";
 import { useNetwork } from "wagmi";
 import { useChainModal } from "@rainbow-me/rainbowkit";
 const HomeOffers1: FunctionComponent = () => {
@@ -28,32 +27,6 @@ const HomeOffers1: FunctionComponent = () => {
         </div>
       </div>
       <Topbar />
-      <div className={styles.card}>
-        <img
-          className={styles.backgroundIcon1}
-          alt=""
-          src="/background8@2x.png"
-        />
-        <div className={styles.text2}>
-          <Image
-            className={styles.ioniconaarrowforward}
-            alt=""
-            src="/ioniconaarrowforward2.svg"
-            width={20}
-            height={20}
-          />
-          <b className={styles.welcomeBack}>Welcome back!</b>
-          <div className={styles.niceToSee}>Nice to see you, Mark Johnson!</div>
-        </div>
-      </div>
-      <div className={styles.chainselect} onClick={openChainModal}>
-        <img
-          className={styles.backgroundIcon2}
-          alt=""
-          src="/background9@2x.png"
-        />
-        <b className={styles.ethereum}>{chain!= undefined ? chain.name:'loading'}</b>
-      </div>
       <div className={styles.tokenview}>
         <div className={styles.background}>
           <div className={styles.tabs}>
