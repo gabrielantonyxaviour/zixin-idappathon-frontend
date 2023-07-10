@@ -1,3 +1,15 @@
+.totalpos{
+  position:absolute;
+  left: 33.5%;
+  top: -7.5%;
+  z-index: 10;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--blackampwhite-white);
+  font-family: var(--font-plus-jakarta-sans);
+}
+
+
 .homeoffers1Child {
   position: absolute;
   top: -7px;
@@ -121,14 +133,36 @@
   width: 92.25px;
   height: 24.01px;
 }
+.chainselect {
+  position: absolute;
+  top: 117px;
+  left: 780px;
+  width: 368px;
+  height: 55px;
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  z-index: 1000;
+}
+.back {
+  width: 940px;
+  height: 88.476px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 97px;
+  left: 297px;
+  border-radius: 20px;
+  border-radius: 20px;
+  background: linear-gradient(128deg, rgba(6, 11, 40, 0.47) 0%, rgba(10, 14, 35, 0.25) 100%);
+  backdrop-filter: blur(60px);
+}
 .projects {
   position: absolute;
   height: 27.13%;
   width: 8.42%;
-  top: 37.3%;
+  top: 38.3%;
   right: 2.81%;
-  bottom: 35.57%;
-  left: 40.78%;
+  bottom: 34.57%;
+  left: 76.78%;
   cursor: pointer;
 }
 .connectedWallet,
@@ -260,14 +294,6 @@
   align-items: center;
   width: 280px;
   height: 30px;
-}
-.chainselect {
-  position: absolute;
-  top: 305px;
-  left: 1048px;
-  width: 368px;
-  height: 55px;
-  font-size: var(--font-size-base);
 }
 .teams,
 .text3 {
