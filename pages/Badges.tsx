@@ -57,6 +57,21 @@ const Badges: FunctionComponent = () => {
       });
   }, []);
   useEffect(() => {
+    fetch("http://localhost:5000/auth/google/accesstoken")
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.accessToken) {
+          console.log("Received data:", data);
+          setGoogleAccessToken(data.accessToken);
+          console.log("Google Access Token:", data.accessToken);
+        }
+        console.log("DBJVSUBIBHVEDHIUH");
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }, []);
+  useEffect(() => {
     fetch("http://localhost:5000/auth/linkedin/accesstoken")
       .then((response) => response.json())
       .then((data) => {
