@@ -26,9 +26,15 @@ We have used Chainlink Functions to verify the social identity using API calls a
 ### Shiji Deployments
 
 PolygonMumbai - ShijiPolygon -  0xeEA8f34E300c79758a7A787172389F162bf72EF4
+
 ScrollTestnet - ShijiGeneral - 0x8521e73c744Ceb7d473B2AA71858BCF7fDC5c41e
+
 ArbitrumGoerli - ShijiGeneral - 0x178d50a8FF299eDa8c34E66F6a2bc38718C10C48
+
 BaseGoerli - ShijiGeneral - 0xeD7B819cde5C9aE1BC529268e9aebb370bc5B84a
+
 MantleTestnet - ShijiGeneral - 0x178d50a8FF299eDa8c34E66F6a2bc38718C10C48
+
 AvalancheFuji - ShijiGeneral - 0x618Aa0e9ADa7eee7F665f9e407e7733F94f727dF
+
 Goerli - ShijiGeneral - 0x8e66F89864B794B29747487c15d7cF7947b3cdD9
