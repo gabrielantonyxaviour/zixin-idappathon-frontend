@@ -14,6 +14,7 @@ PolygonMumbai - ZixinPolygon -  0xeeD66675F74E8B1D66022a6a9258aF3760641b50
 ScrollTestnet - ZixinGeneral - 0xBE38c5eefE99a622cA5F36b6306E5C61470B3974
 
 ArbitrumGoerli - ZixinGeneral - 0xfB0A6b925d503D0a2c3Dc9890D77AdF1767eE3F6
+
 BaseGoerli - ZixinGeneral - 0xb65B773d773c7a7f2F378C71787Db7d7c32f687c
 
 MantleTestnet - ZixinGeneral - 0x8d4d773dF48cd3f827B5F1d3269bd5B057012631
