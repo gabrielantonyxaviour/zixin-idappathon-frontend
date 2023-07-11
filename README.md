@@ -10,11 +10,16 @@ We have used Chainlink Functions to verify the social identity using API calls a
 ### Zixin Deployments
 
 PolygonMumbai - ZixinPolygon -  0xeeD66675F74E8B1D66022a6a9258aF3760641b50
+
 ScrollTestnet - ZixinGeneral - 0xBE38c5eefE99a622cA5F36b6306E5C61470B3974
+
 ArbitrumGoerli - ZixinGeneral - 0xfB0A6b925d503D0a2c3Dc9890D77AdF1767eE3F6
 BaseGoerli - ZixinGeneral - 0xb65B773d773c7a7f2F378C71787Db7d7c32f687c
+
 MantleTestnet - ZixinGeneral - 0x8d4d773dF48cd3f827B5F1d3269bd5B057012631
+
 AvalancheFuji - ZixinGeneral - 0x178d50a8FF299eDa8c34E66F6a2bc38718C10C48
+
 Goerli - ZixinGeneral - 0xc558C81c130aBcc5E06f48311B82F28a4F6713C4
 
 ### About Shiji
