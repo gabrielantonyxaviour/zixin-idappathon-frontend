@@ -23,7 +23,7 @@ Shijis are also minted as Soulbound tokens and act as a proof of transparent ver
 Shijis are transferrable cross-chain enabling permissionless interoperability and flexibility. 
 We have used Chainlink Functions to verify the social identity using API calls and we generated the NFT image using AI and stored the NFT along with it's metadata using NFT.storage
 
-### Zixin Deployments
+### Shiji Deployments
 
 PolygonMumbai - ShijiPolygon -  0xeEA8f34E300c79758a7A787172389F162bf72EF4
 ScrollTestnet - ShijiGeneral - 0x8521e73c744Ceb7d473B2AA71858BCF7fDC5c41e
