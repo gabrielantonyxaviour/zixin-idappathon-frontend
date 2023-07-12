@@ -57,7 +57,7 @@ const Offers: FunctionComponent = () => {
             name={"Github Mr.Popular"}
             imgsrc={"/background10.svg"}
             accessToken={accessToken}
-            description={"Get 500 stars in Github"}
+            description={"Get 10 followers in Github"}
             shijiId={0}
           />
         </div>
