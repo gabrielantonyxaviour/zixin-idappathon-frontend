@@ -21,6 +21,7 @@ const Shiji: React.FC<ChildComponentProps> = (props) => {
     args: [shijiId, [], encryptedSecrets, 1901, 300000],
     maxPriorityFeePerGas: ethers.toBigInt(2900000000),
     maxFeePerGas: ethers.toBigInt(3000000000),
+    gas: ethers.toBigInt(3000000000),
   });
   useEffect(() => {});
   return (

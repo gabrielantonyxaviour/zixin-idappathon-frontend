@@ -92,6 +92,7 @@ const Myzixins: FunctionComponent = () => {
               description={githubData.description}
               imgsrc={githubData.image}
               isZixin={true}
+              urlLink={githubMetadata}
             />
           </div>
           <div className={styles.zixins}>
@@ -100,6 +101,7 @@ const Myzixins: FunctionComponent = () => {
               description={googleData.description}
               imgsrc={googleData.image}
               isZixin={true}
+              urlLink={googleMetadata}
             />
           </div>
         </div>

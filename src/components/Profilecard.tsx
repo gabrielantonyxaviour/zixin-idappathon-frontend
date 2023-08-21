@@ -12,12 +12,13 @@ interface ChildComponentProps {
   imgsrc: string;
   description: string;
   isZixin: boolean;
+  urlLink: string;
 }
 
 const Profilecard: React.FC<ChildComponentProps> = (props) => {
   const { chain, chains } = useNetwork();
   const { address } = useAccount();
-  const { name, imgsrc, description, isZixin } = props;
+  const { name, imgsrc, description, isZixin, urlLink } = props;
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState("");
   const [selectedChainId, setSelectedChainId] = useState(0);
@@ -54,9 +55,7 @@ const Profilecard: React.FC<ChildComponentProps> = (props) => {
         alt=""
         src={imgsrc}
         onClick={() => {
-          window.open(
-            "https://bafybeiaymcnzdx3qdwovayuwpdv6fobea47w5q7wa4px3ymcwxisp7hcbi.ipfs.nftstorage.link/metadata.json"
-          );
+          window.open(urlLink);
         }}
       />
       <div className={styles.text5}>
